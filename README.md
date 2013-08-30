@@ -1,4 +1,3 @@
-
 <h1>Avalon</h1>
 <p>迷你简单易用的MVVM框架</p>
 <hr>
@@ -20,9 +19,6 @@
     <li>操作数据即操作DOM，对ViewModel的操作都会同步到View与Model去。</li>
     <li>自带模块加载系统，省得与其他加载器进行整合。</li>
 </ul>
-<p><a href="http://vdisk.weibo.com/s/aMO9PyIQCnLOF/1375154475">相关PPT下载</a></p>
-<p><a href="http://rubylouvre.github.io/mvvm/">官网地址</a></p>
-<p><a href="http://www.cnblogs.com/rubylouvre/p/3181291.html">入门教程</a></p>
 
 ```html
         <fieldset ms-controller="simple">
@@ -53,3 +49,7 @@ avalon.ready(function() {
     avalon.scan()
 })
 ```
+
+<p><a href="http://vdisk.weibo.com/s/aMO9PyIQCnLOF/1375154475">相关PPT下载</a></p>
+<p><a href="http://rubylouvre.github.io/mvvm/">官网地址</a></p>
+<p><a href="http://www.cnblogs.com/rubylouvre/p/3181291.html">入门教程</a></p>
