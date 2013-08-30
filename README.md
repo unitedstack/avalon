@@ -20,36 +20,6 @@
     <li>自带模块加载系统，省得与其他加载器进行整合。</li>
 </ul>
 
-```html
-        <fieldset ms-controller="simple">
-            <legend>例子</legend>
-            <p>First name: <input ms-duplex="firstName" /></p>
-            <p>Last name: <input ms-duplex="lastName"  /></p>
-            <p>Hello,    <input ms-duplex="fullName"></p>
-            <div>{{firstName +" | "+ lastName }}</div>
-
-        </fieldset>
-```
-```javascript
-avalon.ready(function() {
-    avalon.define("simple", function(vm) {
-        vm.firstName = "司徒"
-        vm.lastName = "正美"
-        vm.fullName = {//一个包含set或get的对象会被当成PropertyDescriptor，
-            set: function(val) {//里面必须用this指向scope，不能使用scope
-                var array = (val || "").split(" ");
-                this.firstName = array[0] || "";
-                this.lastName = array[1] || "";
-            },
-            get: function() {
-                return this.firstName + " " + this.lastName;
-            }
-        }
-    });
-    avalon.scan()
-})
-```
-
 <p><a href="http://vdisk.weibo.com/s/aMO9PyIQCnLOF/1375154475">相关PPT下载</a></p>
 <p><a href="http://rubylouvre.github.io/mvvm/">官网地址</a></p>
 <p><a href="http://www.cnblogs.com/rubylouvre/p/3181291.html">入门教程</a></p>
